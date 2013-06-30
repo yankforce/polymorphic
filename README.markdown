@@ -1,7 +1,12 @@
-## Objective
+#### Objective
 demo how to use polymorphic with has_many through at both side
 
-## core code relation
+#### Environment
+
+rails 4.0.0 <br/> 
+ruby 1.9.3 <br/>
+
+#### Core code relation
 
 ```ruby
 class Article < ActiveRecord::Base
