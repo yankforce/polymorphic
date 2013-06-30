@@ -11,7 +11,7 @@ table
   - @videos.each do |video|
     tr
       td = video.name
-      td = video.size
+      td = video.hsize
       td = link_to 'Show', video
       td = link_to 'Edit', edit_video_path(video)
       td = link_to 'Destroy', video, :confirm => 'Are you sure?', :method => :delete

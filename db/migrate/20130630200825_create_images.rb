@@ -2,7 +2,7 @@ class CreateImages < ActiveRecord::Migration
   def change
     create_table :images do |t|
       t.string :name
-      t.integer :size
+      t.integer :hsize
       t.boolean :hidden
 
       t.timestamps
