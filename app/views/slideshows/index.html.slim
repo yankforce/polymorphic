@@ -1,0 +1,21 @@
+h1 Listing slideshows
+
+table
+  tr
+    th Name
+    th Content
+    th
+    th
+    th
+
+  - @slideshows.each do |slideshow|
+    tr
+      td = slideshow.name
+      td = slideshow.content
+      td = link_to 'Show', slideshow
+      td = link_to 'Edit', edit_slideshow_path(slideshow)
+      td = link_to 'Destroy', slideshow, :confirm => 'Are you sure?', :method => :delete
+
+br
+
+= link_to 'New Slideshow', new_slideshow_path

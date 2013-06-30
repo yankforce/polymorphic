@@ -1,4 +1,6 @@
 Polymorphic::Application.routes.draw do
+  resources :slideshows
+
   resources :videos
 
   resources :images

@@ -1,0 +1,12 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @slideshow.name
+p
+  strong Content:
+  = @slideshow.content
+
+= link_to 'Edit', edit_slideshow_path(@slideshow)
+'|
+= link_to 'Back', slideshows_path
