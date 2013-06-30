@@ -1,0 +1,12 @@
+p#notice = notice
+
+p
+  strong Title:
+  = @issue.title
+p
+  strong Content:
+  = @issue.content
+
+= link_to 'Edit', edit_issue_path(@issue)
+'|
+= link_to 'Back', issues_path

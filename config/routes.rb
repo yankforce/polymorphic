@@ -1,4 +1,8 @@
 Polymorphic::Application.routes.draw do
+  resources :articles
+
+  resources :issues
+
   resources :news
 
   # The priority is based upon order of creation: first created -> highest priority.
