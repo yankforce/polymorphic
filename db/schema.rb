@@ -11,11 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130630201107) do
+ActiveRecord::Schema.define(version: 20130630201951) do
 
   create_table "articles", force: true do |t|
     t.string   "title"
     t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "attachable_entities", force: true do |t|
+    t.integer  "attachable_id"
+    t.string   "attachable_type"
+    t.integer  "entity_id"
+    t.string   "entity_type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
