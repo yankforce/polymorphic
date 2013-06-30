@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @image.name
+p
+  strong Size:
+  = @image.size
+p
+  strong Hidden:
+  = @image.hidden
+
+= link_to 'Edit', edit_image_path(@image)
+'|
+= link_to 'Back', images_path
